@@ -12,6 +12,7 @@ function openInNewTab(url) {
 }
 var commands = {
   "go to *place" : function(place) {
+    console.log(place)
     var places = ["youtube","chat","drive"]
       if (place == "youtube") {
         openInNewTab("https://www.youtube.com/")
