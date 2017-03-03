@@ -8,7 +8,8 @@
 //VOICE CONTROL
 function openInNewTab(url) {
   var win = window.open(url, '_blank');
-  win.focus();}
+  win.focus();
+}
 var commands = {
   "go to *place" : function(place) {
     var places = ["youtube","chat","drive"]
