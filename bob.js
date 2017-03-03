@@ -14,7 +14,7 @@ var commands = {
   "go to *place" : function(place) {
     console.log(place)
     var places = ["youtube","chat","drive"]
-      if (place == "youtube") {
+      if (place == "YouTube") {
         openInNewTab("https://www.youtube.com/")
       }
       if (place == "chat") {
@@ -27,7 +27,7 @@ var commands = {
   'set timer for *time' : function(time) {
     openInNewTab("https://www.google.com/search?q=set%20a%20timer%20for" + time);
   },
-  'lookup *thing' : function(thing) {
+  'look up *thing' : function(thing) {
     openInNewTab("https://www.google.com/search?q=" + thing);
   }
 }
