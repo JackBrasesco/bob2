@@ -8,7 +8,7 @@
 //VOICE CONTROL
 var commands = {
   'test': function() {
-    output.html("it works!")
+    console.log("it works")
   }
 }
 annyang.addCommands(commands);
