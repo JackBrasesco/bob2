@@ -7,8 +7,19 @@
 //NOTES
 //VOICE CONTROL
 var commands = {
-  'hello': function() {
-    output.html("hi!")
+  'go to *place': function(place) {
+    var places = ["youtube","chat","drive"]
+      if (place == "youtube") {
+        openInNewTab("https://www.youtube.com/")
+      }
+      if (place == "chat") {
+        openInNewTab("https://jackbrasesco.github.io/chat/")
+      }
+      if (place == "drive") {
+        openInNewTab("https://drive.google.com/drive/u/0/my-drive")
+      }
+    }
+    }
   }
 }
 annyang.addCommands(commands);
