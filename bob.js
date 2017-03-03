@@ -6,8 +6,11 @@
 //SIGN IN TO REMEBER THINGS
 //NOTES
 //VOICE CONTROL
+function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();}
 var commands = {
-  'go to *place': function(place) {
+  "go to *place" : function(place) {
     var places = ["youtube","chat","drive"]
       if (place == "youtube") {
         openInNewTab("https://www.youtube.com/")
@@ -18,8 +21,12 @@ var commands = {
       if (place == "drive") {
         openInNewTab("https://drive.google.com/drive/u/0/my-drive")
       }
-    }
-    }
+    },
+  'set timer for *time' : function(time) {
+    openInNewTab("https://www.google.com/search?q=set%20a%20timer%20for" + time);
+  },
+  'lookup *thing' : function(thing) {
+    openInNewTab("https://www.google.com/search?q=" + thing);
   }
 }
 annyang.addCommands(commands);
@@ -31,10 +38,6 @@ var clickme = $("#clickme");
 
 var helpbtn = $("#help-button");
 var signinbtn = $("#sign-in-button");
-
-function openInNewTab(url) {
-  var win = window.open(url, '_blank');
-  win.focus();}
 
 /////////////////////////////////////////////////////////////
 var verbs = ["lookup", "search", "find","stalk","go to","set","calculate","add","subtract","multiply","divide",]
