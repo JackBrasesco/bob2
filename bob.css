@@ -1,0 +1,62 @@
+#main-title {
+  box-shadow: 0 0 1em 1em #ccc;
+  text-align: center;
+  color: white;
+  background-color: lightslategrey
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Corben', Georgia, Times, serif;
+}
+p, div {
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+h1 {
+    text-shadow: 1px 1px 1px #ccc;
+}
+body {
+  background-image: url("file:///Users/jacbras/Documents/src/web/Proj_Bob2/dark_embroidery.png");
+}
+#bob-main-img {
+  position: relative;
+  height: 200px;
+  top: 75px;
+  margin-left: 50px;
+  box-shadow: 0 0 1em 1em #696969;
+
+}
+#main-text-field {
+  border: 1px lightgrey solid;
+  box-shadow: 0 0 1em 1em #ccc;
+  position: relative;
+  top: 150px;
+  height: 300px;
+  background-color: white;
+}
+#main-input-field {
+  position: absolute;
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+  top: 235px;
+  width: 500px;
+  left: 50px
+}
+#main-output {
+  margin-left: 50px;
+  margin-top: 25px;
+}
+#clickme {
+  width: 20px;
+  height: 20px;
+  color: red;
+}
+.btm-btn {
+  position: relative;
+  display: inline;
+  width: 100px;
+  height: 25px;
+  background-color: white;
+  bottom: -200px;
+  margin-left: 50px;
+}
