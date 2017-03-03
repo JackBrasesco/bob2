@@ -14,7 +14,7 @@ h1 {
     text-shadow: 1px 1px 1px #ccc;
 }
 body {
-  background-image: url("file:///Users/jacbras/Documents/src/web/Proj_Bob2/dark_embroidery.png");
+  background-image: url("dark_embroidery.png");
 }
 #bob-main-img {
   position: relative;
