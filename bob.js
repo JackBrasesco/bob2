@@ -7,7 +7,7 @@
 //NOTES
 //VOICE CONTROL
 var commands = {
-  'test': function() {
+  'hello': function() {
     console.log("it works")
   }
 }
@@ -23,8 +23,7 @@ var signinbtn = $("#sign-in-button");
 
 function openInNewTab(url) {
   var win = window.open(url, '_blank');
-  win.focus();
-}
+  win.focus();}
 
 /////////////////////////////////////////////////////////////
 var verbs = ["lookup", "search", "find","stalk","go to","set","calculate","add","subtract","multiply","divide",]
@@ -42,8 +41,7 @@ function getWikiIntro(title, processor) {
         var text = pages[pageKeys[0]].extract;
         var processed = processor(text);
         output.text(processed);
-      }
-    }
+      }    }
   })
 }
 var negitvity = "null"
