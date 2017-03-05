@@ -31,7 +31,8 @@ var commands = {
     openInNewTab("https://www.google.com/search?q=" + thing);
   },
   'hey bob *thing': function(thing) {
-    var entry = toString(thing)
+    console.log(thing)
+    var entry = String(thing)
     console.log(entry)
     var negitive = entry.indexOf("not")
      if (negitive > -1) {
