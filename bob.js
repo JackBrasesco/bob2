@@ -30,7 +30,8 @@ var commands = {
   'look up *thing' : function(thing) {
     openInNewTab("https://www.google.com/search?q=" + thing);
   },
-  'hey bob *entry': function(entry) {
+  'hey bob *thing': function(thing) {
+    var entry = toString(thing)
     console.log(entry)
     var negitive = entry.indexOf("not")
      if (negitive > -1) {
