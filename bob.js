@@ -31,8 +31,13 @@ var commands = {
     openInNewTab("https://www.google.com/search?q=" + thing);
   },
   'hey bob *thing': function(thing) {
-    console.log(thing)
-    var entry = String(thing)
+  voiceControl(thing)
+}
+}
+annyang.addCommands(commands);
+annyang.start()
+
+function voiceControl(entry) {
     console.log(entry)
     var negitive = entry.indexOf("not")
      if (negitive > -1) {
@@ -320,9 +325,6 @@ var commands = {
 
     }
   }
-}
-annyang.addCommands(commands);
-annyang.start()
 var output = $("#main-output");
 var input = $("#main-input-field");
 var clickme = $("#clickme");
