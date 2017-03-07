@@ -11,25 +11,6 @@ function openInNewTab(url) {
   win.focus();
 }
 var commands = {
-  "go to *place" : function(place) {
-    console.log(place)
-    var places = ["youtube","chat","drive"]
-      if (place == "YouTube") {
-        openInNewTab("https://www.youtube.com/")
-      }
-      if (place == "chat") {
-        openInNewTab("https://jackbrasesco.github.io/chat/")
-      }
-      if (place == "drive") {
-        openInNewTab("https://drive.google.com/drive/u/0/my-drive")
-      }
-    },
-  'set timer for *time' : function(time) {
-    openInNewTab("https://www.google.com/search?q=set%20a%20timer%20for" + time);
-  },
-  'look up *thing' : function(thing) {
-    openInNewTab("https://www.google.com/search?q=" + thing);
-  },
   'hey bob *thing': function(thing) {
   voiceControl(thing)
 }
