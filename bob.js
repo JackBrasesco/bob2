@@ -8,7 +8,9 @@
 //VOICE CONTROL
 function openInNewTab(url) {
   var win = window.open(url, '_blank');
-  win.focus();
+  setTimeout(function() {
+    win.focus();
+  },500)
 }
 var commands = {
   'hey bob *thing': function(thing) {
